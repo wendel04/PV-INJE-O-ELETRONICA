@@ -88,14 +88,17 @@ function PurchaseToast() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    let hideTimeout = window.setTimeout(() => setVisible(false), 3000);
     const interval = window.setInterval(() => {
-      setVisible(false);
-      window.setTimeout(() => {
-        setIndex((value) => (value + 1) % names.length);
-        setVisible(true);
-      }, 450);
-    }, 7200);
-    return () => window.clearInterval(interval);
+      window.clearTimeout(hideTimeout);
+      setIndex((value) => (value + 1) % names.length);
+      setVisible(true);
+      hideTimeout = window.setTimeout(() => setVisible(false), 3000);
+    }, 15000);
+    return () => {
+      window.clearInterval(interval);
+      window.clearTimeout(hideTimeout);
+    };
   }, [names.length]);
 
   return (

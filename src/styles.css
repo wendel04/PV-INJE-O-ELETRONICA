@@ -111,7 +111,7 @@ h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.05; text-align: center;
 .urgency { padding: 86px 0 96px; text-align: center; }
 .timer { display: inline-block; border-radius: 999px; padding: 12px 24px; background: #f99491; border: 1px solid #ffbfbd; font-size: 14px; margin-bottom: 40px; }
 .timer strong { font-size: 22px; margin-left: 5px; }
-.urgency h2 { font-size: clamp(34px, 4.5vw, 56px); margin-bottom: 24px; }
+.urgency h2 { font-size: clamp(30px, 3.8vw, 48px); line-height: 1.04; margin-bottom: 24px; }
 .urgency p { font-size: 21px; color: #333740; }
 
 .audience { padding: 92px 0; }
@@ -156,7 +156,7 @@ h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.05; text-align: center;
 .price { text-align: center; margin: 34px 0 24px; }
 .price small, .price strong { display: block; }
 .price small { color: #74767e; font-size: 16px; margin-bottom: 10px; }
-.price strong { color: #16a34a; font: 30px "Arial Black", Arial, sans-serif; }
+.price strong { color: #16a34a; font: 900 30px "Arial Black", Arial, sans-serif; -webkit-text-stroke: .55px currentColor; paint-order: stroke fill; }
 .price-card button, .price-card .checkout-button { width: 100%; min-height: 62px; border: 0; border-radius: 10px; background: var(--lime); color: #111; font-weight: 900; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-sizing: border-box; text-align: center; text-decoration: none; }
 .upsell { background: #070707; color: white; border: 2px solid #e73333; margin-top: 24px; padding: 16px; text-align: center; font-size: 18px; line-height: 1.4; }
 .upsell b { color: #ef3939; }
@@ -222,6 +222,7 @@ footer p { color: #d5def5; line-height: 1.45; font-size: 14px; }
   .benefit-grid article:last-child { grid-column: auto; }
   .benefit-grid article { min-height: auto; padding: 22px; }
   .urgency { padding: 68px 0 76px; }
+  .urgency h2 { font-size: clamp(25px, 7vw, 30px); }
   .urgency h2 br { display: none; }
   .audience-grid div { min-height: 100px; }
   .receive-card { padding: 30px 22px; }
