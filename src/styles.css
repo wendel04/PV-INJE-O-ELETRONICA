@@ -28,6 +28,7 @@ section { position: relative; }
 .coral { background: var(--coral); }
 h1, h2, h3, h4, p { margin-top: 0; }
 h1, h2, h3, h4, .cta, .timer, .recommended { font-family: "Arial Black", Arial, sans-serif; }
+h1, h2, h3, h4 { font-weight: 900; }
 h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.05; text-align: center; margin-bottom: 54px; letter-spacing: -1.4px; }
 .subtitle { text-align: center; color: var(--muted); font-size: 18px; }
 
@@ -49,7 +50,7 @@ h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.05; text-align: center;
 .micro-benefit { display: flex; align-items: center; gap: 16px; }
 .micro-benefit > span:last-child { margin-left: 0; }
 .micro-check { margin: -3px 4px 0 5px; }
-.cta { display: inline-flex; align-items: center; justify-content: center; min-height: 64px; padding: 16px 44px; margin-top: 26px; background: var(--lime); color: #111; text-decoration: none; font-size: 19px; border: 0; box-shadow: 0 5px 0 rgba(73,130,0,.25); transition: transform .2s, filter .2s; }
+.cta { display: inline-flex; align-items: center; justify-content: center; min-height: 64px; padding: 16px 44px; margin-top: 26px; background: var(--lime); color: #111; text-decoration: none; font-size: 19px; border: 0; border-radius: 10px; box-shadow: 0 5px 0 rgba(73,130,0,.25); transition: transform .2s, filter .2s; }
 .cta:hover { transform: translateY(-2px); filter: brightness(1.05); }
 .secure-note { color: #64748b; font-size: 14px; font-weight: 700; margin: 20px 0 0; }
 
@@ -151,7 +152,7 @@ h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.05; text-align: center;
 .price small, .price strong { display: block; }
 .price small { color: #74767e; font-size: 16px; margin-bottom: 10px; }
 .price strong { color: #16a34a; font: 30px "Arial Black", Arial, sans-serif; }
-.price-card button, .price-card .checkout-button { width: 100%; min-height: 62px; border: 0; background: var(--lime); color: #111; font-weight: 900; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-sizing: border-box; text-align: center; text-decoration: none; }
+.price-card button, .price-card .checkout-button { width: 100%; min-height: 62px; border: 0; border-radius: 10px; background: var(--lime); color: #111; font-weight: 900; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-sizing: border-box; text-align: center; text-decoration: none; }
 .upsell { background: #070707; color: white; border: 2px solid #e73333; margin-top: 24px; padding: 16px; text-align: center; font-size: 18px; line-height: 1.4; }
 .upsell b { color: #ef3939; }
 .upsell em { color: #27d55c; font-style: normal; font-weight: 900; }
@@ -204,12 +205,12 @@ footer p { color: #d5def5; line-height: 1.45; font-size: 14px; }
   .hero-headline .headline-line { display: block; white-space: nowrap; }
   .hero-mockup { height: 330px; }
   .hero-copy { font-size: 17px; }
-  .cta { width: 100%; padding-inline: 18px; }
+  .cta { width: 100%; padding-inline: 10px; white-space: nowrap; font-size: clamp(12px, 3.8vw, 15px); letter-spacing: -.2px; }
   .proof, .benefits, .what-you-get, .bonuses, .pricing, .guarantee, .access, .faq { padding-top: 66px; padding-bottom: 72px; }
   .carousel-track { gap: 14px; }
   .carousel-track .media-slot { width: 230px; height: 325px; }
   .process-row { flex-direction: column; gap: 8px; font-size: 14px; margin-block: 38px; }
-  .process-row span { width: 100%; line-height: 1.55; }
+  .process-row > span { width: 100%; line-height: 1.55; }
   .process-row i { font-size: 28px; line-height: 1; transform: rotate(90deg); }
   .comparison-mockup { height: 450px; }
   .benefit-grid, .audience-grid, .bonus-grid, .pricing-grid { grid-template-columns: 1fr; }
@@ -220,7 +221,7 @@ footer p { color: #d5def5; line-height: 1.45; font-size: 14px; }
   .audience-grid div { min-height: 100px; }
   .receive-card { padding: 30px 22px; }
   .receive-card ul { grid-template-columns: 1fr; }
-  .receive-card .cta { width: 100%; max-width: 100%; padding-inline: 14px; white-space: normal; }
+  .receive-card .cta { width: 100%; max-width: 100%; padding-inline: 6px; white-space: nowrap; font-size: clamp(10px, 3.4vw, 14px); }
   .bundle-mockup { height: 360px; }
   .bonus-image { height: 260px !important; }
   .price-card { padding: 40px 22px 24px; }
