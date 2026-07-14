@@ -245,7 +245,7 @@ export default function Home() {
               <ul>{basicItems.map((text) => <li key={text}><ThinCheck />{text}</li>)}</ul>
               <div className="price"><small>De R$ 47,90</small><strong>Por apenas R$ 17,90</strong></div>
               <a className="checkout-button" href="https://checkout.wiven.com.br/checkout/cmrkoamex0zlz01pqdtv13mqt?offer=U9FXZPH">QUERO ACESSO BÁSICO</a>
-              <div className="upsell"><b>AINDA DÁ TEMPO DE LEVAR A MELHOR OPÇÃO!</b><br />⬇️ Leve o kit completo com todos os bônus ⬇️</div>
+              <div className="upsell"><b>AINDA DÁ TEMPO DE LEVAR A MELHOR OPÇÃO!</b><br /><span className="down-arrow" aria-hidden="true" /> Leve o kit completo com todos os bônus <span className="down-arrow" aria-hidden="true" /></div>
             </article>
             <article className="price-card complete">
               <div className="recommended">PACOTE COMPLETO — RECOMENDADO</div>
