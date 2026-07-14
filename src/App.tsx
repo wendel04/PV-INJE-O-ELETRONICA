@@ -252,7 +252,7 @@ export default function Home() {
               <div className="exclusive"><b>BÔNUS EXCLUSIVOS:</b>{bonuses.map(([, title]) => <p key={title}>🎁 {title}</p>)}</div>
               <div className="saving">VOCÊ LEVA O KIT COMPLETO COM TODOS OS BÔNUS</div>
               <div className="price"><small>De R$ 77,90</small><strong>Por apenas R$ 27,90</strong></div>
-              <a className="checkout-button" href="https://checkout.wiven.com.br/checkout/cmrkoamex0zlz01pqdtv13mqt?offer=5ML7DCH">QUERO ACESSO COMPLETO</a>
+              <a className="checkout-button" href="https://checkout.wiven.com.br/checkout/cmrkz1vj302qx01q24th4tcrg?offer=oz7nm9v">QUERO ACESSO COMPLETO</a>
             </article>
           </div>
         </div>
